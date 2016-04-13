@@ -13,10 +13,11 @@ namespace Story_of_liban_o_emil
         {
             Boolean harNyckel = false;
             Boolean harKläder = false;
+            Boolean självmord = false;
             
             string input;
 
-            Console.WriteLine("---Välkommen till Karl-Axels Command Line Adventure---");
+            Console.WriteLine("---Välkommen till Emil och Libans äventyr!!!---");
             Console.WriteLine("\nDu står i ett tomt rum. Detta enda som finns är en dörr framför dig. Det ligger en nyckel på golvet");
             while (true) //oändlig loop
             {
@@ -49,7 +50,7 @@ namespace Story_of_liban_o_emil
                 else if (input == "självmord")
                 {
                     Console.WriteLine("Du sprang rakt in i väggen och dog");
-                    
+                    självmord = true;
                 }
                 else
                     Console.WriteLine("Icke gilltigt eller felstavat commando!");
@@ -57,8 +58,7 @@ namespace Story_of_liban_o_emil
                 }
                 Console.WriteLine("\nGrattis du gick ut genom dörren!");
             Console.ReadLine();
-
-
+            { }
         }
     }
 }
